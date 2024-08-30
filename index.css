@@ -1,0 +1,133 @@
+/* Universal Styles */
+*{
+   max-width: 1920px;
+ }
+ 
+ /* Header Styling */
+ .navigation{
+   background-color: rgb(1, 0, 67);
+   background-size: cover;
+   height: 100px;
+   width: 100vw;
+   position: fixed;
+   top: 0px;
+   z-index: 1;
+   overflow: wrap;
+ }
+ .navigation li{
+   display: inline;
+   position: relative;
+   top: -70px;
+   left: 400px;
+   padding: 30px;
+   margin: 25px;
+   font-size: 30px;
+   font-family: "Courgette", cursive, sans-serif;
+ }
+ 
+ .links a{
+   text-decoration: none;
+   color: rgb(179, 176, 176);
+   box-shadow: 5px 5px 5px gray;
+   padding: 5px;
+ }
+ /*Main Styling */
+ /*Heading Styling */
+ .Main_Heading{
+   background-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/54/snow-1853352_640.jpg);
+   background-size: cover;
+   position: relative;
+   top: 40px;
+   height: 900px;
+   color: rgb(50, 0, 43);
+   font-size: 90px;
+   text-align: center;
+   font-family: "Dancing Script",cursive;
+ }
+ 
+ h2{
+  position: relative;
+  bottom: 0px;
+  background-size: cover;
+  color: rgb(1, 0, 67);
+  height: 50px;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Dancing Script",cursive;
+ }
+ /* Section Styling */
+ section{
+   position: relative;
+   top: 100px; 
+ }
+ 
+ .inline_section{
+   display: inline-block;
+ }
+ /* Content Styling */
+ .section p{
+ width: 800px;
+ position: relative;
+ left: 200px;
+ font-size: 22px;
+ font-family: "Courgette", cursive, sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ }
+ 
+ 
+ /* Image Positioning */
+ .section img{
+  position: relative;
+  left: 500px;
+  height: 400px;
+ }
+ /* Section Heading link Styling */
+ .click_me a{
+   text-decoration: none;
+ }
+ 
+ /* Footer Styling */
+ footer{
+   position: relative;
+   top: 300px; 
+   background-color: rgb(1, 0, 67);
+ }
+ 
+ .social_media_link{
+   height:30px;
+   width: 30px;
+   position: relative;
+   top: -50px;
+   left: 1700px;
+ }
+
+ .footer p{
+  position: relative;
+  top: -40px;
+  left: 40px;
+  font-family: "Courgette", cursive, sans-serif;
+  color: rgb(179, 176, 176);
+ }
+ 
+ .footer li{
+   display: inline;
+   position: relative;
+   top: -100px;
+   left: 400px;
+   padding: 50px;
+ }
+ .map_pointer{
+  width: 30px;
+  height:30px;
+ }
+
+ .footer a{
+  color:rgb(36, 167, 210)
+ }
+ 
+ /* Logo Styling */
+ .logo {
+   height: 100px;
+   width: 100px;
+ }
