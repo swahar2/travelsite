@@ -1,6 +1,7 @@
 /* Universal Styles */
 *{
    max-width: 1920px;
+   display: flex;
  }
  
  /* Header Styling */
