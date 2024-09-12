@@ -1,141 +1,234 @@
 /* Universal Styles */
-*{
-   max-width: 1920px;
- }
- 
- /* Header Styling */
-flex_container_1{
+
+/* Header Styling */
+ .flex_container_1{
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
  }
 
  .navigation{
-   background-color: rgb(1, 0, 67);
-   background-size: cover;
-   min-height: 100px;
-   width: 100vw;
+   background-color: rgba(1, 0, 50, 0.9);
+   width: 100%;
    position: fixed;
    top: 0px;
    z-index: 1;
    display: flex;
-   flex: 1 3 20px;
+   justify-content: space-between;
+   align-items: center;
+   align-content: space-between;
  }
  .navigation li{
    display: inline;
-   position: relative;
-   top: -70px;
-   left: 400px;
-   padding: 30px;
-   margin: 25px;
-   font-size: 30px;
+   padding: .5rem;
+   margin: .5rem;
+   font-size: 1rem;
    font-family: "Courgette", cursive, sans-serif;
  }
- 
+
  .links a{
    text-decoration: none;
    color: rgb(179, 176, 176);
    box-shadow: 5px 5px 5px gray;
    padding: 5px;
  }
+
+   /*Mobile Styling for navigation bar */
+ @media only screen and (max-width: 450px){
+    .links a{
+      box-shadow: none;
+      text-decoration: underline;
+    }
+
+    .navigation li{
+      padding: 0rem;
+      font-size: .5rem;
+    }
+
+ }
+
+
  /*Main Styling */
  /*Heading Styling */
  .Main_Heading{
-   background-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/54/snow-1853352_640.jpg);
+   background-image: url(https://images.unsplash.com/photo-1658476293101-4181a2afc8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHRyYXZlbCUyMGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D);
    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
    position: relative;
-   top: 40px;
-   height: 900px;
+   top: 6rem;
+   height: 40rem;
    color: rgb(50, 0, 43);
-   font-size: 90px;
-   text-align: center;
    font-family: "Dancing Script",cursive;
    display: flex;
+   flex-direction: column;
+   align-items: center;
    justify-content: center;
  }
  
- h2{
-  position: relative;
-  bottom: 0px;
-  background-size: cover;
-  color: rgb(1, 0, 67);
-  height: 50px;
-  text-align: center;
-  font-size: 80px;
-  font-family: "Dancing Script",cursive;
+ .Main_Heading h4{
+    font-size: 2.5rem;
+    margin: 0rem;
+    padding: 0rem;
  }
- /* Section Styling */
- section{
-   position: relative;
-   top: 100px; 
+
+.Main_Heading h1{
+  font-size: 5.625rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+ /* Mobile Styling for Main Heading*/
+ @media only screen and (max-width: 450px){
+  .Main_Heading h4{
+    font-size: 1.5rem;
+  }
+  .Main_Heading h1{
+    font-size: 3rem;
+  }
+
  }
- 
- .inline_section{
-   display: inline-block;
+
+
+ /* Why Choose Ree Tale Travels section Styling */
+  .section{
+    position: relative;
+    top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+  }
+
+  .section h2{
+    font-size: 3rem;
+    font-family: "Courgette", cursive, sans-serif;
+  }
+  .Bubble{
+    border: 1px solid rgb(1, 0, 67);
+    background-color: rgba(1, 0, 67,0.85);
+    border-radius: 50%;
+    height: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-family: "Courgette", cursive, sans-serif;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+  }
+
+  .Bubble h4{
+    color: rgb(218, 209, 209);
+    font-size: 1.5rem;
+    margin: 1rem 1rem 1rem 0rem;
+    flex-shrink: 3;
+    display: flex;
+  }
+
+.Bubble p{
+  display: flex;
+  width: 75%;
+  color: rgb(218, 209, 209);
+  flex-shrink: 3; 
+}
+
+.tablet{
+  display: none;
+}
+
+ /* Table Styling- Why Choose Ree Tale Travels */
+ @media only screen and (max-width: 770px){
+  .desktop{
+   display: none;
+  }
+
+  .tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bubble h4{
+    margin: .5rem .5rem .5rem 0rem;
+  }
+
  }
- /* Content Styling */
- .section p{
- width: 800px;
- position: relative;
- left: 200px;
- font-size: 22px;
- font-family: "Courgette", cursive, sans-serif;
- font-weight: 400;
- font-style: normal;
- }
- 
- 
- /* Image Positioning */
- .section img{
-  position: relative;
-  left: 500px;
-  height: 400px;
- }
- /* Section Heading link Styling */
- .click_me a{
-   text-decoration: none;
- }
- 
+
+  /* Mobile Styling- Why Choose Ree Tale Travels */
+  @media only screen and (max-width: 450px){
+    .desktop{
+      display: none;
+     }
+     .tablet{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+      
+      .Bubble{
+        width: 100%;
+      }
+
+  }
+
+
  /* Footer Styling */
  footer{
    position: relative;
-   top: 300px; 
+   top: 15rem;
    background-color: rgb(1, 0, 67);
- }
- 
- .social_media_link{
-   height:30px;
-   width: 30px;
-   position: relative;
-   top: -50px;
-   left: 1700px;
+   width: 100%;
+   display: flex;
+   height: 15rem;
  }
 
- .footer p{
+ .container{
+  display: flex;
+  flex-direction: column;
+ }
+
+
+ .social_media_link{
+   height:2rem;
+   width: 2rem;
+ }
+
+ .footer span{
   position: relative;
-  top: -40px;
-  left: 40px;
   font-family: "Courgette", cursive, sans-serif;
   color: rgb(179, 176, 176);
  }
  
  .footer li{
    display: inline;
-   position: relative;
-   top: -100px;
-   left: 400px;
-   padding: 50px;
+   padding: 5rem;
  }
  .map_pointer{
-  width: 30px;
-  height:30px;
+  width: 2rem;
+  height: 2rem;
  }
 
  .footer a{
-  color:rgb(36, 167, 210)
+  color:rgb(36, 167, 210);
  }
  
+ /* Table Styling- Footer */
+ @media only screen and (max-width: 770px){
+  .footer li{
+    padding: 1rem;
+  }
+
+ }
+
+   /* Mobile Styling- Footer */
+   @media only screen and (max-width: 450px){
+    .footer li{
+      padding: 0rem;
+    }
+   }
+
  /* Logo Styling */
  .logo {
-   height: 100px;
-   width: 100px;
+   height: 5.5rem;
+   width: 5.5rem;
  }
